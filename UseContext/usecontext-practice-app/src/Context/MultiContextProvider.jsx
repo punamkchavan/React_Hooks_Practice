@@ -4,12 +4,12 @@ import axios from "axios";
 
 export default function MultiContextProvider({children}){
 
-   const [value, setData] = useState();
+   const [value, setValue] = useState();
 
   const refreshData = async () => {
     try {
       const res = await axios.post("https://jsonplaceholder.typicode.com/todos"); 
-      setData(res.data)
+      setValue(res.data)
       //console.log(res.data);
 
     } catch (err) {
