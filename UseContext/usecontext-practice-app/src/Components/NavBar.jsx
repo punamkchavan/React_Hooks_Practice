@@ -9,7 +9,8 @@ export default function NavBar(){
         <>
         <header>
             <nav style={{backgroundColor:'pink', margin:0, padding:'4px', color:'white'}}>
-                <h1>{value}</h1>
+                <h2>City: {value?.name}</h2>
+                <h2>Temp: {value?.main?.temp}°C</h2>
             </nav>
         </header>
         </>
